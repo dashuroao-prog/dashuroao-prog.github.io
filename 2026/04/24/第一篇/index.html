@@ -6,7 +6,7 @@
     <link rel="alternate icon" type="image/png" href="/img/favicon.png">
     
     <!-- Title and Subtitle -->
-    <title>Leroy - </title>
+    <title>第一篇 - Leroy - </title>
     
     <!-- Meta Tags -->
     <meta name="description" content="">
@@ -40,45 +40,73 @@
     <body>
         <div class="paper">
             <div class="paper-main">
-                <div class="header">
+                <div class="post-header">
     <a class="logo" href="/">Leroy</a>
-    <ul class="nav">
-        
-        <li><a href="/">首页</a></li>
-        
-        <li><a href="/archives">归档</a></li>
-        
-        <li><a href="/page">标签</a></li>
-        
-        <li><a href="/about">关于</a></li>
-        
-    </ul>
 </div>
+<div class="post-main">
 
-<div class="post-list">
     
-    <div class="post ">
-        <a class="post-title" href="/2026/04/24/%E7%AC%AC%E4%B8%80%E7%AF%87/">第一篇</a>
-        <div class="post-except">
-            最近一直在折腾基于CF和GITHUB的各种新鲜玩意。
-
-            <a class="read-more" href="/2026/04/24/%E7%AC%AC%E4%B8%80%E7%AF%87/"> ...... </a>
+    
+        <div class="post-main-title">
+            第一篇
         </div>
-        <div class="post-meta">
-            <div class="post-date">2026.04.24</div>
-            
-                <div class="post-tags">
-                    <span class="tag-emoji">#</span>
+        <div class="post-content-meta">
+            2026-04-24
+        </div>
+        <div class="post-md">
+            <p>最近一直在折腾基于CF和GITHUB的各种新鲜玩意。</p>
+
+        </div>
+        
+        
+            <div class="post-content-meta tags">
+                <div class="emo">#</div>
+                <div>
                     
-                         <a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录</a>
+                        <a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/">日常记录</a>
                     
                 </div>
-            
-        </div>
-    </div>
+            </div>
+        
+
     
+
+</div>
+<div class="post-header">
+    <a class="go-home" href="javascript:history.back()">
+        <svg width="8" height="14" viewBox="0 0 8 14">
+            <path d="M7 1L1 7l6 6" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
 </div>
 
+
+    <section id="comments">
+        <div id="valine_thread"></div>
+        <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+        <script>
+            var META_INFO = ['nick','mail','link'], 
+                meta = 'nick,mail,link'.split(',').filter(function(item){
+                    return META_INFO.indexOf(item) > -1
+                }),
+                serverURLs = '',
+                vConfig = {
+                    el: '#valine_thread',
+                    meta: meta,
+                    appId: "",
+                    appKey: "",
+                    placeholder: "Just go go",
+                    pageSize:'15',
+                    avatar:'mp',
+                    lang:'zh-CN',
+                    recordIP: 'false',
+                    enableQQ: 'false',
+                };
+            if(!!serverURLs) vConfig['serverURLs'] = serverURLs;
+            var v = new Valine(vConfig);
+            window.v = v
+        </script>
+    </section>
 
 
                 <div class="footer">
